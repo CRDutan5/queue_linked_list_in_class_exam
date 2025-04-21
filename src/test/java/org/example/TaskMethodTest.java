@@ -37,7 +37,7 @@ public class TaskMethodTest {
     public void testProcessNextTaskFromQueue_Success() {
         Task processedTask = taskMethod.processNextTaskFromQueue();
         assertEquals(task1, processedTask);
-        assertEquals(3, taskMethod.getTaskQueueSize());
+        assertEquals(3, taskMethod.getTaskQueueSize()); //May need to change
         assertEquals(task2, taskMethod.peekAtNextTaskInQueue()); // Next in line
     }
 
